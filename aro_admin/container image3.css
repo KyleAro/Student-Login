@@ -1,0 +1,329 @@
+/* Enable smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Simple Container Box */
+.container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-color: #f5f5f5;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('psot.png'), linear-gradient(to bottom, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.7) 100%);
+    background-size: cover;
+    opacity: 0.5;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+}
+
+.field-text {
+    font-size: 9rem;
+    font-weight: bold;
+}
+
+.field-text h3 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.field-text p {
+    font-size: 9rem;
+    color: white;
+}
+
+/* Container for all the child containers */
+.container-wrapper {
+    display: flex;
+    gap: 100px;
+}
+
+/* Individual containers */
+.container-1, .container-2, .container-3, .container-4, .container-5 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: #39375b;
+    background-size: cover;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+}
+
+.container-1 iframe, .container-2 iframe, .container-3 iframe, .container-4 iframe, .container-5 iframe {
+    width: 200px;
+    height: 200px;
+    margin-left: 0;
+}
+
+/* Backgrounds */
+.container-1 {
+    background-image: url('https://media.giphy.com/media/ZE5jLCFAzlpgxXQqM5/giphy.gif');
+}
+
+.container-2 {
+    background-image: url('https://media.giphy.com/media/PRJ5uWuZ8tX6KGpJS2/giphy.gif');
+}
+
+.container-3 {
+    background-image: url('https://media.giphy.com/media/FPlN54m1qHT6ZcgyMP/giphy.gif');
+}
+
+.container-4 {
+    background-image: url('https://media.giphy.com/media/lsHBsYxxG4EBBac2CR/giphy.gif');
+}
+
+.container-5 {
+    background-image: url('https://media.giphy.com/media/h73UyEvcZuPHvkU930/giphy.gif');
+}
+
+/* Text Overlay in the Container */
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    transition: transform 2s ease-out;
+    color: white;
+    z-index: 1;
+}
+
+.text-overlay h1 {
+    font-size: 9rem;
+    font-weight: bold;
+}
+
+.about-title {
+    font-size: 3rem;
+    transition: font-size 0.3s ease;
+    color: white;
+
+}
+
+/* Video Container Styling */
+.video-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2C423F;
+    border-radius: 10px;
+    padding: 100px;
+    margin: 100px auto;
+    max-width: 100%;
+    flex-direction: row-reverse;
+}
+
+.video-container video {
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+    border-radius: 40px;
+}
+
+.video-container .description {
+    flex: 1;
+    margin-left: 20px;
+    color: #333;
+}
+
+.video-container .description h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.video-container .description p {
+    font-size: 8rem;
+    color: #fff;
+    line-height: 1.5;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .video-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .video-container video {
+        margin-bottom: 20px;
+    }
+
+    .video-container .description {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+}
+
+/* Styling for the Back to Top Button */
+#backToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    display: none; /* Initially hidden */
+}
+
+#backToTopBtn:hover {
+    background-color: #1F2A2A;
+}
+
+/* Show the button when scrolling down */
+body #backToTopBtn {
+    background-color:#2B4570;
+    color: white;
+}
+
+/* Optional: Make the button visible when the user scrolls down */
+body:scroll {
+    #backToTopBtn {
+        display: block;
+    }
+}
+
+/* Styling for Top Anchor */
+#top {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.positions-links-container {
+    background-color: #2C423F;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Full width */
+}
+
+/* Title of the Section */
+.positions-links-containerh2 {
+    font-size: 8rem;
+    font-weight: bold;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 15px;
+	margin-top:500px;
+}
+
+/* List of Links */
+.positions-links-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/* List Items */
+.positions-links-container li {
+    margin: 10px;
+	font-size: 3rem;
+}
+
+/* Position Links */
+.position-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.position-link:hover {
+    color: #004a99;
+    text-decoration: none;
+}
+
+/* Active link styling (optional) */
+.position-link.active {
+    color: #ff5733;
+    font-weight: 700;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+    .positions-links-container ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .positions-links-container li {
+        margin-bottom: 15px;
+    }
+}
+
+/* Content Box */
+.position-content {
+    display: none;
+    margin-top: 20px;
+    padding: 10px;
+	background-color: #2C423F;
+}
+
+/* Image Containers */
+.position-content .image-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.position-content .image-container img {
+    max-width: 1000px;
+    height: auto;
+}
+
+.description1 {
+    font-size: 5rem;  /* Make the text larger (equivalent to h1 size) */
+    font-weight: bold;  /* Make the description bold */
+    color: #fff;  /* Set the text color */
+    margin-left: 10px;  /* Add space between the image and the description */
+    font-family: Poppins, sans-serif;  /* Set a clean and readable font */
+    text-transform: uppercase;  /* Make the text uppercase if desired */
+    max-width: calc(100% - 50px);  /* Ensure the text doesn't overflow */
+    white-space: nowrap;  /* Prevent text from breaking into multiple lines */
+    overflow: hidden;  /* Hide any overflowing text */
+    text-overflow: ellipsis;  /* Show an ellipsis (...) when the text overflows */
+}
+.image-container p {
+    font-size: 5em;  /* Set font size */
+    color: #666;  /* Set the text color */
+    margin-left: 15px;  /* Add spacing between the image and the paragraph */
+    line-height: 1.5;  /* Adjust line height for better readability */
+    max-width: 300px;  /* Limit the width of the text */
+    word-wrap: break-word;  /* Ensure the text wraps when it reaches the container edge */
+    text-align: left;  /* Make the text aligned evenly on both sides */
+}
+
+/* Alternate Image Directions */
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.image-container:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+
+.image-container:nth-child(even) {
+    flex-direction: row;
+}

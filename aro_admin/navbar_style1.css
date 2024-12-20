@@ -1,0 +1,173 @@
+/* Importing Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+/* General Reset and Font Style */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body Styling: Centering Content */
+body {
+    display: relative;
+    justify-content: center; /* Horizontal Centering */     /* Vertical Centering */
+    min-height: 100vh;
+    background: #2C423F;   /* Background Color */
+}
+
+/* Box Container for the Dropdown */
+.box {
+    position: absolute;         /* Change to absolute position */
+    top: 20px;                      /* Align to top */
+    right: 0;                     /* Align to left */
+    width: 250px;                /* Width of the box */
+    height: 250px;               /* Height of the box */
+}
+
+/* Dropdown Button Styling */
+.dropdown {
+    position: sticky;
+    width: 60px;            /* Full width of the parent container */
+    height: 60px;           /* Height of the dropdown button */
+    background: #39375b	;    /* Button background color */
+    color: #fff;   	/* Text color */
+    font-size: 22px;        /* Font size for text */
+    display: flex;
+    justify-content: center; /* Center text horizontally */
+    align-items: center;    /* Center text vertically */
+    border-radius: 10px;      /* Rounded corners */
+    cursor: pointer;       /* Pointer cursor on hover */
+	z-index:10;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2); /* Shadow effect */
+}
+
+/* Left Arrow Icon inside the Dropdown */
+.dropdown .left-icon {
+    position: relative;
+    top: -5px;
+    display: inline-block;
+    width: 20px;
+    height: 5px;
+    background: #fff;       /* Arrow color */
+    border-radius: 40px;
+    transition: .5s;         /* Smooth transition for rotation */
+    left: 10px;
+    transform: rotate(0deg); /* Initial rotation */
+}
+
+/* Right Arrow Icon inside the Dropdown */
+.dropdown .right-icon {
+    position: relative;
+    top: 5px;
+    display: inline-block;
+    width: 20px;
+    height: 5px;
+    background: #fff;       /* Arrow color */
+    border-radius: 40px;
+    transition: .5s;         /* Smooth transition for rotation */
+    left: -10px;
+    transform: rotate(0deg); /* Initial rotation */
+}
+
+/* Hover State for Rotating the Left and Right Arrows */
+.dropdown:hover .left-icon {
+    transform: rotate(-40deg); /* Rotate left icon when hovered */
+}
+
+.dropdown:hover .right-icon {
+    transform: rotate(40deg);  /* Rotate right icon when hovered */
+}
+
+/* Dropdown Items Container Styling */
+.dropdown:hover .items {
+    visibility: visible;     /* Make items visible on hover */
+    transform: translateY(-50%); /* Smooth transition for visibility */
+}
+
+/* Dropdown Items Initial State */
+.dropdown .items {
+    position: absolute;
+    top: 50%; /* Center items vertically */
+    right: 110%; /* Position items to the right of the button */
+    display: flex; /* Align items horizontally */
+    width: auto; /* Adjust width to fit all items */
+    height: 60px; /* Match height of the dropdown button */
+    visibility: hidden; /* Hide items initially */
+    transition: .5s ease; /* Smooth transition */
+    overflow: hidden;
+	z-index:11;
+    transform: translateY(-50%); /* Hide items initially */
+}
+
+/* Individual Dropdown Item (Links) Styling */
+.dropdown .items a {
+    position: relative;
+    left: 100%;              /* Position items off-screen to the right */
+    display: flex;           /* Flexbox for centering text */
+    font-size: 20px;         /* Font size for items */
+    background: #fff;        /* Background color for items */
+    color: #333;          /* Text color for items */
+    text-decoration: none;   /* Remove underline */
+    border-radius: 10px;      /* Rounded corners for items */
+    padding: 10px 15px;      /* Padding inside each item */
+    margin-top: 2.5px;       /* Space between items */
+    z-index: 1;
+    overflow: hidden;        /* Hide overflow */
+    transition: 1.5s;         /* Smooth transition for sliding */
+    transition-delay: calc(60ms * var(--i)); /* Delay for each item */
+}
+
+/* Make Items Slide In When Dropdown is Hovered */
+.dropdown:hover .items a {
+    left: 0;                 /* Move items to their normal position */
+}
+
+/* Hover Effect for Dropdown Items */
+.dropdown .items a:hover {
+    color: #fff;   
+	background: #39375b;	/* Text color on hover */
+}
+/* Button beside the Dropdown (to the right) */
+.icon-button {
+	width: 100px; /* Adjust the width */
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #39375b; /* Green background */
+    color: white; /* White text */
+    font-size: 18px;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    margin-left: 70px; /* Space between the dropdown and button */
+	margin-top: -60px;
+    transition: background-color 0.3s ease;
+	z-index:11;
+}
+
+/* Style the image inside the button */
+.icon-button .icon-img {
+    width: 20px; /* Adjust the size of the image */
+    height: 20px; /* Adjust the size of the image */
+    align-items: center;/* Space between the icon and the text */
+}
+
+/* Hover effect for the icon button */
+.icon-button:hover {
+    background-color: #39375b; /* Darker green when hovered */
+}
+
+/* Focus effect for button */
+.icon-button:focus {
+    outline: none;
+   /* Green glow */
+}
+html {
+    scroll-behavior: smooth;
+	scroll-padding-top: 50px;
+}
+
+      

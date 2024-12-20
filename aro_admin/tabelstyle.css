@@ -1,0 +1,214 @@
+/* General table styling */
+.my-table {
+    width: 100%;
+    border-collapse: collapse; /* Remove space between table cells */
+    margin: 30px 0; /* Add space around the table */
+    font-family: 'Arial', sans-serif;
+    background-color: #fff; /* White background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    overflow: hidden;
+}
+
+/* Table header styling */
+.my-table th {
+    padding: 16px 20px;
+    text-align: left;
+    background-color: #2C423F; /* Green background */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-top-left-radius: 8px; /* Rounded top-left corner */
+    border-top-right-radius: 8px; /* Rounded top-right corner */
+}
+
+/* Table cell styling */
+.my-table td {
+    padding: 12px 20px;
+    text-align: left;
+    color: #333; /* Darker text for readability */
+    border-bottom: 1px solid #f2f2f2; /* Light grey border between rows */
+    font-size: 14px;
+}
+
+/* Hover effect for rows */
+.my-table tr:hover {
+    background-color: #f1f1f1; /* Light grey background on hover */
+    transition: background-color 0.3s ease;
+}
+
+/* Style for even rows */
+.my-table tr:nth-child(even) {
+    background-color: #f9f9f9; /* Slightly lighter background for even rows */
+}
+
+/* Style for action links (Edit, Delete) */
+.my-table a {
+    display: inline-block;
+    padding: 6px 12px;
+    margin: 0 6px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 6px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Edit link styles */
+.my-table a.edit {
+    color: white;
+    background-color: #58A4B0; /* Blue background */
+
+}
+
+.my-table a.edit:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight grow effect */
+}
+
+/* Delete link styles */
+.my-table a.delete {
+    color: white;
+    background-color: #e74c3c; /* Red background */
+}
+
+.my-table a.delete:hover {
+    background-color: #c0392b; /* Darker red on hover */
+    transform: scale(1.05); /* Slight grow effect */
+}
+
+/* Style for action icons (Edit and Delete) */
+.my-table .nav-icon {
+    vertical-align: middle;
+    margin-right: 8px;
+    width: 18px;
+    height: 18px;
+}
+#content h3 {
+    color: #fff;
+}
+/* General Container Styling */
+#container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Content Area Styling */
+#content {
+    background-color: #58A4B0;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Header Styling */
+h3 {
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Error and Success Messages Styling */
+.errors {
+    color: red;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #2c3e50;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* Form Styling */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Form Input Styling */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: border 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #3498db; /* Blue border on focus */
+    outline: none; /* Remove the default outline */
+}
+
+/* Form Label Styling */
+label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+
+/* Submit Button Styling */
+input[type="submit"] {
+    width: 104%;
+    padding: 16px;
+    font-size: 18px;
+    background-color: #3498db; /* Blue background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Links Styling */
+a {
+    color: #3498db;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Form Section Styling */
+form p {
+    margin-bottom: 15px;
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 30px;
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+    color: #333;
+}
+a.go-back-link {
+    color: white; /* White font color */
+    text-decoration: none; /* Remove underline */
+    background-color: #007bff; /* Blue background color */
+    padding: 10px 20px; /* Add padding around the text */
+    border-radius: 5px; /* Round the corners of the background */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+a.go-back-link:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}

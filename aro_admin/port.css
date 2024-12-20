@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background: #333;
+  color: white;
+  padding: 10px 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo h1 {
+  margin-left: 20px;
+}
+
+header .nav-links {
+  list-style: none;
+  display: flex;
+  margin-right: 20px;
+}
+
+header .nav-links li {
+  margin: 0 10px;
+}
+
+header .nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 5px;
+}
+
+header .nav-links a:hover {
+  background-color: #444;
+}
+
+.hero {
+  text-align: center;
+  background: #f4f4f4;
+  padding: 50px 0;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+section {
+  padding: 30px;
+}
+
+.about, .projects, .contact {
+  background: #fff;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.projects .project-card {
+  margin: 10px 0;
+}
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+form button {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #555;
+}

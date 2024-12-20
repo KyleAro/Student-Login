@@ -1,0 +1,109 @@
+/* General Container Styling */
+#container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Content Area Styling */
+#content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Header Styling */
+h3 {
+    color: #333;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Error and Success Messages Styling */
+.errors {
+    color: red;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #2c3e50;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+/* Form Styling */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Form Input Styling */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: border 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #3498db; /* Blue border on focus */
+    outline: none; /* Remove the default outline */
+}
+
+/* Form Label Styling */
+label {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: inline-block;
+}
+
+/* Submit Button Styling */
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    background-color: #3498db; /* Blue background */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Links Styling */
+a {
+    color: #3498db;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Form Section Styling */
+form p {
+    margin-bottom: 15px;
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 30px;
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+    color: #333;
+}
